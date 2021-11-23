@@ -1,0 +1,22 @@
+<form>
+    <h1>Atualizando ToDo</h1>
+
+      <div class="forms">
+        <mat-form-field class="form">
+            <mat-label>Titulo</mat-label>
+            <input [(ngModel)]="todo.titulo" name="todo.titulo" matInput placeholder="Ex. Estudar Angular 12">
+          </mat-form-field>
+    
+          <mat-form-field class="form">
+            <mat-label>Descricao</mat-label>
+            <input [(ngModel)]="todo.descricao" name="todo.descricao" matInput placeholder="Ex. Estudar Angular 12 e Spring Boot 2">
+          </mat-form-field>
+      </div>
+
+      <div class="buttons">
+        <button (click)="update()" mat-stroked-button color="primary">Atualizar</button>
+        <button (click)="cancel()"  mat-stroked-button color="warn">Cancelar</button>
+      </div>
+
+</form>
+
